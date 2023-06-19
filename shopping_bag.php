@@ -17,6 +17,7 @@
     </div>
 </section> -->
 
+<!-- date("Y-m-d H:i:s"); -->
 <section class="restaurants-page">
     <div class="container">
         <div class="row justify-content-center">
@@ -35,6 +36,7 @@
                                         <th>Mobile</th>
                                         <th>Payment Method</th>
                                         <th>Status</th>
+                                        <th>Date</th>
                                         <th></th>
 
                                     </tr>
@@ -71,6 +73,9 @@
                                                 <?php else : ?>
                                                     <td class="text-center"><span class="badge badge-secondary">Pending</span></td>
                                                 <?php endif; ?>
+                                                <td>
+                                                    <?php echo date("M j,Y h:i A", strtotime($row['datetime'])); ?>
+                                                </td>
                                                 <td class="text-center">
                                                     <button class="btn btn-sm btn-primary view_order" data-id="<?php echo $row['id'] ?>">View Order</button>
                                                 </td>

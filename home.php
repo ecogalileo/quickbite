@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_URI'] == "/ecommerce1/index.php?page=home" || "/ecommerce1/
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-center mb-4 page-title welcome-title">
                 <h1 class="text-white">Welcome to
-                    <?php echo $_SESSION['setting_name']; ?>
+                    <?php echo $_SESSION['setting_name'];?>
                 </h1>
                 <!-- <hr class="divider my-4 bg-dark" /> -->
                 <a class="btn btn-dark bg-black btn-xl js-scroll-trigger mt-5" href="#menu">Order Now</a>
